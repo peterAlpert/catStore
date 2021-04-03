@@ -3,7 +3,8 @@ import { getProductById } from '../api/products'
 
 class Product extends Component {
     state = {
-        product: {}
+        product: {},
+        quantity: 0
     };
 
     componentDidMount() {
@@ -14,11 +15,17 @@ class Product extends Component {
             });
     }
 
+    handleQty = (event) => {
+        if (event.target.value < 0)
+            return
+        this.setState({ quantity: event.target.value })
+    }
+
     render() {
         const product = this.state.product;
+        const quantity = this.state.quantity;
         return (
-            <div>
-                <br />
+            <div><br />
                 <div className='row'>
                     <div className='col-6'>
                         <img src={product.image} style={{ width: '90%' }} />
@@ -26,8 +33,9 @@ class Product extends Component {
                     <div className='col-6'>
                         <h1>{product.name}</h1>
                         <p>{product.price}$</p>
-                        <p>{product.description}</p><br /><br />
-                        <input type='number' /> <br /><br />
+                        <p>{product.description}</p><br />
+                        <input type='number' value={quantity} onChange={this.handleQty} /> <br />
+                        <p>Total : {quantity * product.price}</p><br />
                         <button className='btn btn-primary'>Add To Cart</button>
                     </div>
                 </div>
