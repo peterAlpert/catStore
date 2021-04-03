@@ -4,4 +4,9 @@ function getProducts() {
     return Promise.resolve(products);
 }
 
-export default getProducts
+function getProductById(id) {
+    const product = products.find(prod => prod.id === id)
+    return Promise.resolve(product);
+}
+
+export { getProducts, getProductById }

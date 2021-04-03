@@ -33,5 +33,12 @@
         "price": 300,
         "image": "/img/5.png",
         "description": "Equipped with Galaxy S20 5G's same revolutionary cameras, Galaxy S20 FE 5G lets you snapshot moments your way. Frame up the whole fam with Wide-angle"
+    },
+    {
+        "id": 6,
+        "name": "Honor 8x",
+        "price": 200,
+        "image": "/img/6.png",
+        "description": "6.5-inch Borderless fullview display · Colorful texture back lens · Kirin 710 powerful chipset · GPU Turbo · 3750mAh (typ.) long-lasting battery · 128GB ROM (64GB)"
     }
 ]

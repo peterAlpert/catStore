@@ -6,6 +6,7 @@ import './App.css';
 //pages 
 import Home from './pages/Home'
 import Products from './pages/Products'
+import Product from './pages/Product'
 import Cart from './pages/Cart'
 
 function App() {
@@ -34,7 +35,8 @@ function App() {
         </nav>
 
         <Route path='/' component={Home} exact />
-        <Route path='/products' component={Products} />
+        <Route path='/products' component={Products} exact />
+        <Route path='/products/:id' component={Product} />
         <Route path='/cart' component={Cart} />
 
       </div>
