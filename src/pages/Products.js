@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ProductItem from './../components/productItem'
+import ProductItem from '../components/productItem'
 import { getProducts } from '../api/products'
 
 class Products extends Component {
