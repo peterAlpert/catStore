@@ -18,12 +18,15 @@ class Products extends Component {
 
     render() {
         return (
-            <div className='row'>
-                {this.state.products.map(prod =>
-                    <div className='col-4' key={prod.id}>
-                        <ProductItem product={prod} />
-                    </div>
-                )}
+            <div>
+                <h1>Products</h1>
+                <div className='row'>
+                    {this.state.products.map(prod =>
+                        <div className='col-4' key={prod.id}>
+                            <ProductItem product={prod} />
+                        </div>
+                    )}
+                </div>
             </div>
         );
     }

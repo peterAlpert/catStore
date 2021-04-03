@@ -33,9 +33,9 @@ class Product extends Component {
                     <div className='col-6'>
                         <h1>{product.name}</h1>
                         <p>{product.price}$</p>
-                        <p>{product.description}</p><br />
+                        <p>{product.description}</p>
                         <input type='number' value={quantity} onChange={this.handleQty} /> <br />
-                        <p>Total : {quantity * product.price}</p><br />
+                        <p>Total : {quantity * product.price}</p>
                         <button className='btn btn-primary'>Add To Cart</button>
                     </div>
                 </div>

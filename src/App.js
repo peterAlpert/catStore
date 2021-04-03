@@ -1,5 +1,5 @@
 import {
-  BrowserRouter as Router, Switch, Route, Link
+  BrowserRouter as Router, Route, Link
 } from "react-router-dom";
 import './App.css';
 
@@ -9,12 +9,15 @@ import Products from './pages/Products'
 import Product from './pages/Product'
 import Cart from './pages/Cart'
 
+//component
+import CartIcon from "./components/cartIcon/CartIcon";
+
 function App() {
   return (
     <Router>
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <a className="navbar-brand" href="#">MobileStore</a>
+          <Link className="navbar-brand" to='/'>MobileStore</Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -32,6 +35,7 @@ function App() {
               </li>
             </ul>
           </div>
+          <CartIcon />
         </nav>
 
         <Route path='/' component={Home} exact />
