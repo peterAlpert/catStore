@@ -1,13 +1,13 @@
 import React from 'react'
 
-function ProductItem() {
+function ProductItem(props) {
     return (
-        <div class="card" >
-            <img src={'img/1.png'} class="card-img-top" alt="..." />
-            <div class="card-body">
-                <h5 class="card-title">IPhone 11 Pro</h5>
-                <p class="card-text">$100</p>
-                <a href="#" class="btn btn-block btn-primary">Details</a>
+        <div className="card" >
+            <img src={props.product.image} className="card-img-top" alt="..." />
+            <div className="card-body">
+                <h5 className="card-title">{props.product.name}</h5>
+                <p className="card-text">Price : ${props.product.price}</p>
+                <a href={"/products" + props.product.id} className="btn btn-block btn-primary">Details</a>
             </div>
         </div>
     );
