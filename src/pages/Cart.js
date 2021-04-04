@@ -9,9 +9,9 @@ class Cart extends Component {
             <div>
                 <h1>Products</h1>
                 <div className='row'>
-                    {this.props.cartItems.map(item =>
+                    {this.props.cartItems.map((item, index) =>
                         <div className='col-3' key={item.product.id}>
-                            <CartItem item={item} />
+                            <CartItem item={item} index={index} />
                         </div>
                     )}
                 </div><br />
