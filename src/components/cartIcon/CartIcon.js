@@ -17,7 +17,7 @@ function CartIcon(props) {
 const mapStateToProps = (state) => {
     return {
         totalQuantity: state.cart.reduce(
-            (total, item) => total + item.quantity, 0
+            (total, item) => total + parseInt(item.quantity), 0
         )
     }
 }

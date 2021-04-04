@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { getProductById } from '../api/products'
+import { addToCart } from '../store/actions/actions'
+import { connect } from 'react-redux'
 
 class Product extends Component {
     state = {
@@ -36,7 +38,7 @@ class Product extends Component {
                         <p>{product.description}</p>
                         <input type='number' value={quantity} onChange={this.handleQty} /> <br />
                         <p>Total : {quantity * product.price}</p>
-                        <button className='btn btn-primary'>Add To Cart</button>
+                        <button className='btn btn-primary w-100' onClick={() => this.props.addToCart(product, quantity)}>Add To Cart</button>
                     </div>
                 </div>
             </div>
@@ -44,4 +46,10 @@ class Product extends Component {
     }
 }
 
-export default Product
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addToCart: (productInfo, quantity) => dispatch(addToCart(productInfo, quantity))
+    }
+}
+export default connect(null, mapDispatchToProps)(Product)
+

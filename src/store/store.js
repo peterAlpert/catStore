@@ -1,4 +1,5 @@
 import { createStore } from 'redux'
+import cartReducer from './reducers/index'
 
 const initialState = {
     cart: [
@@ -25,10 +26,6 @@ const initialState = {
     ]
 }
 
-function reducers(state = initialState) {
-    return state
-}
-
-const store = createStore(reducers)
+const store = createStore(cartReducer, initialState)
 
 export default store
