@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import CartItem from './../components/cartItem/CartItem'
 import { connect } from 'react-redux'
+import { clearCart } from '../store/actions/actions'
 
 class Cart extends Component {
 
@@ -16,7 +17,7 @@ class Cart extends Component {
                     )}
                 </div><br />
                 <h3>Total : {this.props.Total}$</h3>
-                <button className='btn btn-primary w-100'>Pay</button>
+                <button className='btn btn-primary w-100' onClick={this.props.clearCart}>Place Order</button>
             </div>
         );
     }
@@ -28,4 +29,10 @@ const mapStateToProps = (state) => {
         Total: state.cart.reduce((total, item) => total + (item.quantity * item.product.price), 0)
     }
 }
-export default connect(mapStateToProps)(Cart)
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        clearCart: () => dispatch(clearCart())
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Cart)
