@@ -11,13 +11,13 @@ class Cart extends Component {
                 <h1>Products</h1>
                 <div className='row'>
                     {this.props.cartItems.map((item, index) =>
-                        <div className='col-3' key={item.product.id}>
+                        <div className='col-6 col-md-4 col-lg-3' key={index}>
                             <CartItem item={item} index={index} />
                         </div>
                     )}
                 </div><br />
                 <h3>Total : {this.props.Total}$</h3>
-                <button className='btn btn-primary w-100' onClick={this.props.clearCart}>Place Order</button>
+                <button className='btn btn-lg btn-primary w-100 mb-4' onClick={this.props.clearCart}>Place Order</button>
             </div>
         );
     }

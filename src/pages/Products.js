@@ -22,7 +22,7 @@ class Products extends Component {
                 <h1>Products</h1>
                 <div className='row'>
                     {this.state.products.map(prod =>
-                        <div className='col-4' key={prod.id}>
+                        <div className='col-6 col-md-4 col-lg-3' key={prod.id}>
                             <ProductItem product={prod} />
                         </div>
                     )}
