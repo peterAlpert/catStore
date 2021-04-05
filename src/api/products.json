@@ -3,42 +3,42 @@
         "id": 1,
         "name": "IPhone 11 Pro",
         "price": 300,
-        "image": "/img/1.png",
+        "image": "https://mobizil.com/wp-content/uploads/2019/09/iPhone-11-Pro-1.jpg",
         "description": "Featuring a Stunning Pro Display, A13 Bionic, Cutting-Edge Pro Camera System and Longest Battery Life Ever in iPhone with iPhone 11 Pro Max"
     },
     {
         "id": 2,
         "name": "Oppo f11",
         "price": 200,
-        "image": "/img/3.png",
+        "image": "https://abdelazez.com/wp-content/uploads/2019/12/oppo-f11-pro-green1-1.jpg",
         "description": "Oppo F11 Android smartphone. Announced Mar 2019. Features 6.53″ display, MT6771 Helio P70 chipset, 4020 mAh battery, 128 GB storage, 6 GB RAM."
     },
     {
         "id": 3,
         "name": "Samsung m30",
         "price": 250,
-        "image": "/img/4.png",
+        "image": "https://mobizil.com/wp-content/uploads/2019/03/samsung-galaxy-m30.jpg",
         "description": "Released 2019, March. 174g, 8.5mm thickness. Android 8.1, up to Android 10, One UI 2. 32GB/64GB/128GB"
     },
     {
         "id": 4,
         "name": "IPhone 4s",
         "price": 150,
-        "image": "/img/2.png",
+        "image": "https://www.kickmobiles.com/images/thumbs/0014923_apple-iphone-4s_808.jpeg",
         "description": "Apple iPhone 4s smartphone. Announced Oct 2011. Features 3.5″ display, Apple A5 chipset, 8 MP primary camera, 1432 mAh battery, 64 GB storage, 512 MB"
     },
     {
         "id": 5,
         "name": "Samsung galaxy s20",
         "price": 300,
-        "image": "/img/5.png",
+        "image": "https://2b.com.eg/pub/media/catalog/product/p/h/photooooeditshop_22_.jpg",
         "description": "Equipped with Galaxy S20 5G's same revolutionary cameras, Galaxy S20 FE 5G lets you snapshot moments your way. Frame up the whole fam with Wide-angle"
     },
     {
         "id": 6,
         "name": "Honor 8x",
         "price": 200,
-        "image": "/img/6.png",
+        "image": "https://mobizil.com/wp-content/uploads/2018/09/honor-8x-2.jpg",
         "description": "6.5-inch Borderless fullview display · Colorful texture back lens · Kirin 710 powerful chipset · GPU Turbo · 3750mAh (typ.) long-lasting battery · 128GB ROM (64GB)"
     }
 ]

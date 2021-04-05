@@ -8,7 +8,7 @@ class Cart extends Component {
     render() {
         return (
             <div>
-                <h1>Products</h1>
+                <h1>Cart</h1>
                 <div className='row'>
                     {this.props.cartItems.map((item, index) =>
                         <div className='col-6 col-md-4 col-lg-3' key={index}>

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 //pages 
+import Home from '../../pages/Home'
 import Products from '../../pages/Products'
 import Product from '../../pages/Product'
 import Cart from '../../pages/Cart'
@@ -23,7 +24,7 @@ class Header extends Component {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/">Products</Link>
+                                    <Link className="nav-link" to="/products">Mobiles</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/cart">Cart</Link>
@@ -33,7 +34,8 @@ class Header extends Component {
                         <CartIcon />
                     </nav>
 
-                    <Route path='/' component={Products} exact />
+                    <Route path='/' component={Home} exact />
+                    <Route path='/products' component={Products} exact />
                     <Route path='/products/:id' component={Product} />
                     <Route path='/cart' component={Cart} />
 
