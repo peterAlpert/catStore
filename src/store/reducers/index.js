@@ -16,7 +16,7 @@ function cartReducer(state, action) {
 
         case REMOVE_FROM_CART: {
             const newCart = { ...state };
-            delete newCart.cart[action.index];
+            newCart.cart.splice(action.index, 1);
             return newCart;
         }
 
